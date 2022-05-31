@@ -12,3 +12,4 @@ public/robots.txt
 out
 package-lock.json
 yarn.lock
+coverage

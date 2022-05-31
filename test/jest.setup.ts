@@ -1,4 +1,4 @@
-import "isomorphic-unfetch";
+// import "isomorphic-unfetch";
 import nock from "nock";
 import dotenv from "dotenv";
 import Enzyme from "enzyme";
