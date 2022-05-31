@@ -7,7 +7,14 @@ module.exports = {
     rootDir: "../",
     collectCoverage: true,
     coveragePathIgnorePatterns: [
-        "<rootDir>/test/"
+        "<rootDir>/test/",
+        "<rootDir>/src/components/AdditionalComponent",
+        "<rootDir>/src/components/ExportToExcel",
+        "<rootDir>/src/components/InstantTemplate",
+        "<rootDir>/src/components/Loading",
+        "<rootDir>/src/components/ModalConfirm",
+        "<rootDir>/src/components/PageTitle",
+        "<rootDir>/src/components/TemplateComponent"
     ],
     passWithNoTests: true,
     testEnvironment: "jsdom",
