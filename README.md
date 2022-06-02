@@ -48,3 +48,17 @@ MIT
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/91465039/171552155-abebd571-989c-4e35-b63b-6aa7a3576c0c.png">
 <img width="441" alt="image" src="https://user-images.githubusercontent.com/91465039/171552190-3338bb13-f46c-4d90-b327-0dccc234fc7d.png">
 
+### API
+- https://6295d3b575c34f1f3b221cbd.mockapi.io/v1/api
+  - GET: /user
+  - GET: /user/:id
+  - POST: /user
+  - PUT: /user/:id
+  - DELETE: /user/:id
+  - GET: /user/:id/job
+  - GET: /user/:id/job/:id
+  - POST: /user/:id/job
+  - PUT: /user/:id/job/:id
+  - DELETE: /user/:id/job/:id
+
+
