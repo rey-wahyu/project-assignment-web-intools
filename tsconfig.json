@@ -19,72 +19,30 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@pages/*": [
-        "pages/*"
-      ],
-      "@pages": [
-        "pages"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@components": [
-        "src/components"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@styles": [
-        "src/styles"
-      ],
-      "@public/*": [
-        "public/*"
-      ],
-      "@public": [
-        "public"
-      ],
-      "@helpers/*": [
-        "src/helpers/*"
-      ],
-      "@helpers": [
-        "src/helpers"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@utils": [
-        "src/utils"
-      ],
-      "@constants/*": [
-        "src/constants/*"
-      ],
-      "@constants": [
-        "src/constants"
-      ],
-      "@components/icons/*": [
-        "src/components/icons/*"
-      ],
-      "@components/icons": [
-        "src/components/icons"
-      ],
-      "@datastore/*": [
-        "src/datastore/*"
-      ],
-      "@redux/*": [
-        "src/redux/*"
-      ],
-      "@redux": [
-        "src/redux"
-      ],
-      "@i18n": [
-        "i18n.js"
-      ],
-      "@test/*": [
-        "test/*"
-      ],
-      "@test": [
-        "test"
-      ]
+      "@pages/*": ["pages/*"],
+      "@pages": ["pages"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@styles/*": ["src/styles/*"],
+      "@styles": ["src/styles"],
+      "@public/*": ["public/*"],
+      "@public": ["public"],
+      "@helpers/*": ["src/helpers/*"],
+      "@helpers": ["src/helpers"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants"],
+      "@components/icons/*": ["src/components/icons/*"],
+      "@components/icons": ["src/components/icons"],
+      "@datastore/*": ["src/datastore/*"],
+      "@redux/*": ["src/redux/*"],
+      "@redux": ["src/redux"],
+      "@i18n": ["i18n.js"],
+      "@test/*": ["test/*"],
+      "@test": ["test"],
+      "@themes/*": ["src/themes/*"],
+      "@themes": ["src/themes"]
     },
     "incremental": true
   },

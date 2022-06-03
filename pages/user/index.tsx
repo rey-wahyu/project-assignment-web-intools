@@ -1,18 +1,17 @@
 import React, { FC } from "react";
 import InstantTemplateProvider from "@components/InstantTemplate/context";
 import FilterView from "@components/InstantTemplate";
-
 import DateFnsUtils from "@date-io/date-fns";
-import { COLUMNS_TABLE_EXAMPLE, MODULE_FORMS_EXAMPLE } from "@components/Example/config";
+import { COLUMNS_TABLE_USER, MODULE_FORMS_USER } from "@components/User/constants/config";
 
-const Examples: FC = () => {
+const User: FC = () => {
   
   const handleListResponseTransform = (response) => {    
     let temp = response;
     temp = temp.map((item, i) => ({
       ...item,
       no: i + 1,
-      dob: new DateFnsUtils().format(item.dob, 'dd MMM yyyy')
+      dob: new DateFnsUtils().format(new Date(item.dob), 'dd MMM yyyy')
     }));
 
     return temp;
@@ -21,17 +20,17 @@ const Examples: FC = () => {
   return (
     <InstantTemplateProvider>
       <FilterView
-        menuName="Examples"
-        elementTagPrefix="Examples"
-        pageTitle="Example List"
+        menuName="User"
+        elementTagPrefix="User"
+        pageTitle="User Management"
         showAddButton
-        apiURL="/api/example"
-        moduleTable={COLUMNS_TABLE_EXAMPLE}
-        moduleForms={MODULE_FORMS_EXAMPLE}
+        apiURL="/api/user"
+        moduleTable={COLUMNS_TABLE_USER}
+        moduleForms={MODULE_FORMS_USER}
         apiListResponseTransform={handleListResponseTransform}
-        exportFilename="example"
+        exportFilename="user"
       />
     </InstantTemplateProvider>
   );
 };
-export default Examples;
+export default User;
