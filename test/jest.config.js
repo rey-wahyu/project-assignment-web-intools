@@ -1,4 +1,5 @@
-const { pathsToModuleNameMapper } = require("ts-jest/utils");
+// const { pathsToModuleNameMapper } = require("ts-jest/utils");
+const { pathsToModuleNameMapper } = require("ts-jest");
 const { compilerOptions } = require("../tsconfig.json");
 
 const paths = compilerOptions.paths ? compilerOptions.paths : {};
@@ -6,6 +7,8 @@ const paths = compilerOptions.paths ? compilerOptions.paths : {};
 module.exports = {
     rootDir: "../",
     collectCoverage: true,
+    moduleDirectories: ["node_modules", "src"],
+    // moduleFileExtensions: ["js", "jsx"],
     coveragePathIgnorePatterns: [
         "<rootDir>/test/",
         "<rootDir>/src/components/AdditionalComponent",

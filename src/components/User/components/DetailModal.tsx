@@ -15,9 +15,9 @@ import {
     cssFooter,
 } from "@themes/reusableCustomStyle";
 import { FC, useEffect, useState } from "react";
-import { PROPS } from "../constants/inteface";
+import { DisplayModal } from "@components/TemplateComponent/constants/interface";
 
-const DetailModal: FC<PROPS> = ({ open, handleCloseModal, id, data }) => {
+const DetailModal: FC<DisplayModal> = ({ open, handleCloseModal, id, data }) => {
     const [isLoading, setIsLoading] = useState(true);
     const [snapshot, setSnapshot] = useState();
 

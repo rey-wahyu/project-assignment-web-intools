@@ -40,4 +40,4 @@ export const MODULE_FORMS_USER = [
         label: "Phone",
         dataIndex: "phone",
     },
-];  
+];

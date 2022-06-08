@@ -1,5 +1,12 @@
 import { ReactNode, CSSProperties } from "react";
 
+export interface DisplayModal {
+  open: boolean;
+  handleCloseModal: (params) => void;
+  id: number;
+  data?: any[];
+}
+
 export interface ModuleTable {
   title: string;
   dataIndex: string;
